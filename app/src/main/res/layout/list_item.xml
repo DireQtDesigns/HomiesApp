@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50pt"
+        android:layout_height="100dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/trump"
+        android:padding="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:paddingLeft="1dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/firstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donald"
+                android:textStyle="bold"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/lastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Trump"
+                android:textStyle="bold"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone"
+            android:text="911"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:text="USA! USA! USA!"
+            android:textSize="10sp"
+            android:paddingTop="20dp"/>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/call"
+        android:id="@+id/callBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/transparent"/>
+
+</RelativeLayout>
